@@ -1,0 +1,13 @@
+button{
+    width: 110px;
+    height: 45px;
+    border:none;
+    border-radius: 5px;
+}
+button:active {
+    background-color: #ff2d1e; 
+    color: white; 
+    transition: 1s;
+    transform: scale(0.88); 
+  }
+  
