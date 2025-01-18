@@ -1,0 +1,44 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+section{
+    margin: 0;
+    padding:0;
+    width: 300px;
+    height:100%
+}
+.views-icon{ /*set relative để .views và .icon-mat-xem dùng absolute căn dưới chân ảnh*/
+    position: relative;
+    font-size: 12px;
+}
+img{
+    display: block; /*Set block để ảnh chiếm 100% chiều rộng, 1 mình 1 hàng */
+    width: 100%;
+    height: auto;
+}
+.views{
+    position: absolute;/*set absolute kèm bottom 0 để căn phía dưới chân ảnh có relative phía trên*/
+    bottom: 0;
+    width: 300px;
+    padding: 5px 0px 5px 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.icon-mat-xem{
+    padding: 2px;
+    margin:5px 0px 5px 5px;
+    display: inline; /*set display (thường là flex) kèm align-items, justify-content là center để căn giữa trung tâm phần nền*/
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(106, 105, 104);
+}
+a{
+    text-decoration: none;
+}
+h3{
+    margin:0px;
+    padding:0px;
+}
