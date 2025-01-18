@@ -1,0 +1,23 @@
+div{
+    display:flex;
+    width: 200px;
+    height: 80px;
+    background-color:orangered;
+    color:white;
+    justify-content: center;
+    align-items:center;
+
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+div{
+opacity:0.5;
+    
+}
+div:hover{
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn { to { opacity: 1;  } } 
+

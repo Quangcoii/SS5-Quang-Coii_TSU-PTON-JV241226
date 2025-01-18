@@ -1,0 +1,26 @@
+div{
+    display:flex;
+    width: 200px;
+    height: 80px;
+    background-color:orangered;
+    color:white;
+    justify-content:center;/* Căn giữa chiều ngang nội dung thẻ div */
+    align-items: center;/*Căn giữa chiều dọc nội dung thẻ div */
+
+/* Căn và cố định thẻ ở vị trí giữa trang web, set top left để đẩy thẻ ra 50
+5 chiều cao và lề trái, set thẻ translate -50% để đẩy ngược nó về, kết hợp với top left 50% sẽ đảm bảo nó luôn ở giữa trang */
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+/* transform-origin center set cho các hiệu ứng tranform đều được căn giữa( điểm gốc của các biến đổi */
+    transform-origin: center center;
+    transition: 2 ease;/* Chỉnh thời gian & kiểu biến đổi (dùng cho hover) */
+    
+    
+}
+div:hover{
+    transform: translate(-50%,-50%) rotate(-25deg);
+    
+}
