@@ -1,0 +1,89 @@
+Body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.Clock{
+    width: 450px;
+    height: 450px;
+    background-image: url(/resources/Bản\ sao\ vi-lol-arcane-5120x2880-18378.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 7px solid rgb(8, 125, 193);
+    border-radius: 50%;
+    position: relative;
+    
+}
+.Clock:hover .Seconds{
+    animation: Kim-giay 60s linear infinite;}
+.Clock:hover .Minute{
+    animation: Kim-phut 60s linear infinite;}
+.Clock:hover .Hour{
+    animation: Kim-gio 60s linear infinite;}
+
+.Seconds,.Minute,.Hour{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center top;
+    transform:translate(-50%,-100%);  
+}
+.Seconds{
+    width: 3px;
+    height: 210px;
+    background-color: red;
+    
+}
+.Minute{
+    width: 7px;
+    height: 130px;
+    background-color: whitesmoke;
+   
+}
+.Hour{
+    width: 10px;
+    height: 80px;
+    background-color: whitesmoke;
+    
+}
+
+@keyframes Kim-giay{
+    from{transform: translate(-50% -100%);rotate:0deg;}
+    to{transform: translate(-50% -100%);rotate: 3600deg;}
+}
+
+@keyframes Kim-phut{
+    from{transform: translate(-50% -100%);rotate:0deg;}
+    to{transform: translate(-50% -100%);rotate: 360deg;}
+}
+
+@keyframes Kim-gio{
+    from{transform: translate(-50% -100%);rotate:0deg;}
+    to{transform: translate(-50% -100%);rotate: 36deg;}
+}
+
+.Circle1{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+    background-color: black;
+    border: 2px solid orangered;
+}
+
+.Circle2{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+    background-color:gold;
+}
